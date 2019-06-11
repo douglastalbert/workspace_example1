@@ -1,0 +1,12 @@
+import requests
+myOAuth = 'bb1e184bc6e5c889f04f2aebe18e91f1ab746f5c'
+OAuth = input("Enter your github OAuth personal access token: ")
+OAuth = 'token ' + OAuth
+
+headers={'Authorization': myOAuth}
+response = requests.get("https://api.github.com", headers = headers)
+#print(response)
+#print(response.json())
+
+demo_repo = requests.get('https://api.github.com/repos/douglastalbert/demo')
+print (demo_repo.json().keys())
