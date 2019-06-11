@@ -1,0 +1,16 @@
+import numpy
+nList = list(range(0,11))
+np_nList = numpy.array(nList)
+sList = list(i**2 for i in range(0,11))
+np_sList = numpy.array(sList)
+s2Diff = np_sList - np_nList
+print(s2Diff)
+
+print()
+
+a = numpy.array([[2,0,12],[6,2,1],[1,1,1]])
+b = numpy.array([[23,32,12],[16,21,51],[14,31,41]])
+print(numpy.cross(a,b))
+
+print()
+print(numpy.linalg.svd(a))

@@ -1,0 +1,22 @@
+from faker import Faker
+#print(Faker().address())
+seededFake = Faker()
+seededFake.seed(489303)
+for i in range(0,11):
+    print(seededFake.name())
+
+
+
+''' First ten names for seed 489303
+Courtney Morgan
+Ashley Hodges
+Richard Cole
+Katherine Little
+Jon Weiss
+John Allen
+Stephanie Barnett
+Rebecca Blackburn
+Randall Vasquez
+Kari Ferguson
+Mckenzie Anderson
+'''
