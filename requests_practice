@@ -1,7 +1,7 @@
 import requests
 
-myOAuth = ''
-OAuth = input("Enter your github OAuth personal access token: ")
+myOAuth = '1852c242282e4f39fd892d30d0f7096e7ffef33a'
+#OAuth = input("Enter your github OAuth personal access token: ")
 OAuth = 'token ' + myOAuth
 
 '''
