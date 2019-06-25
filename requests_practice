@@ -1,6 +1,6 @@
 import requests
 
-myOAuth = '1852c242282e4f39fd892d30d0f7096e7ffef33a'
+myOAuth = 'afd5172e1419bb97ada1c1426ea19a063bb8f98c'
 #OAuth = input("Enter your github OAuth personal access token: ")
 OAuth = 'token ' + myOAuth
 
@@ -46,4 +46,5 @@ suRepos = requests.get("https://api.github.com/users/douglastalbert/repos", head
 u = user(sampleUser.json())
 r = repo(demo_repo.json())
 rs = repos(suRepos.json())
-print(rs)
+
+print(requests.get('https://api.github.com/user', headers=headers).json())
